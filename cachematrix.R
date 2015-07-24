@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This Code creates a matrix and returns its inverse via slove function. Both values are stored in the envirement other 
+## than the current one. Thus once the inverse is calculated, the calculation is not necessarily to be performed in a second call
 
-## Write a short comment describing this function
+## The first function creates a matrix and returns it's inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -18,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function firstly looks up in the environment to check if the inverse of matrix exists, 
+## if so, it caches the value, otherwise it calculates the inverse and stores it in the environment.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
